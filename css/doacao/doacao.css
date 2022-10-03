@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+    font-family: 'Manrope', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+:root {
+    --main-text-color: #060453;
+    --botao-doacao: #E04B4B;
+}
+/* color: var(--main-text-color); */
+
+/*HEADER*/
+header{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px 0px 100px;
+    background-color: var(--main-text-color);
+}
+
+#menu-mobile{
+    display: none;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover{
+    color: gray;
+}
+
+.quebraDeTexto{
+    width: 80px;
+    text-align: center;
+}
+
+.botao{
+    background-color: var(--botao-doacao);
+    border-radius: 20px;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao:hover{
+    background-color: #230F9C;
+    color: gray;
+}
+
+/*BODY*/
+.principal{
+    display: flex;
+    
+}
+
+#imagens{
+    width: 300vmax;
+    background-color: #230F9C;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 100px;
+}
+
+#doacao_incentivo{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    color: #fff;
+    font-size: 0.75em;
+    text-align: center;
+    background-color: #EB1717;
+}
+
+#doacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    
+}
+
+hr{
+    width: 300px;
+    border-top: 2px solid #44444460;
+    align-self: center;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_input{
+    width: 290px;
+    height: 40px;
+    padding-left: 20px;
+    border: solid 1px gray;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#secao_tipo_doacao{
+    margin-top: 20px;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+#centralizado_multi_input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}

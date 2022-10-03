@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/doacao/doacao.css" media="all">
+    <link rel="stylesheet" href="css/doacao/mobile.css" media="screen and (max-width:480px)">
+    <title>Doação</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/download.png" alt="#" width="40">
+        <ul id="menu-all">
+            <li><a href="">Institucional</a></li>
+            <li><a href="">Nossas ações</a></li>
+            <li><a href="">Contato</a></li>
+            <li class="quebraDeTexto"><a href="">Junte-se á causa</a></li>
+            <li class="quebraDeTexto"><a class="botao" href="">QUERO DOAR</a></li>
+        </ul>
+        <div class="mobile-menu-icon ">
+            <button onclick="abrir_menu()" ><img class="icon" src="/imagens/menu_white_36dp.svg" alt="#"></button>
+        </div>
+        <div id="menu-mobile" class="menu-mobile open">
+            <ul id="list-menu">
+                <li><a href="" class="nav-item ">Institucional</a></li>
+                <li><a href="" class="nav-item ">Nossas ações</a></li>
+                <li><a href="" class="nav-item ">Contato</a></li>
+                <li class="quebraDeTexto nav-item "><a href="">Junte-se á causa</a></li>
+                <li class="quebraDeTexto nav-item " ><a class="botao" href="">QUERO
+                        DOAR</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <section class="principal">
+        <div id="imagens">
+            <img src="" alt="#">
+            <img src="" alt="#">
+        </div>
+        <div id="doacao">
+            <div id="doacao_incentivo">
+                <h1>Ajude e transforme a vida de alguém</h1>
+            </div>
+            <h1>Faça uma doação</h1>
+            <hr>
+            <form action="" method="post">
+                <input type="text" class="text_input" name="nome" placeholder="Nome:">
+                <input type="number" class="text_input" name="telefone" placeholder="Telefone:">
+                <input type="email" class="text_input" name="email" placeholder="E-mail:">
+                <p id="secao_tipo_doacao">Tipo de doação</p>
+                <span style="margin: 10px 0;">
+                    <input type="radio" name="tipo_doacao" id="tipo_doacao"><label for="tipo_doacao">dinheiro</label>
+                    <input type="radio" name="tipo_doacao" id="tipo_doacao"><label
+                        for="tipo_doacao">alimento/material</label>
+                </span>
+                <span>
+                    <input style="margin-bottom: 10px" type="checkbox" name="politicaDePrivacidade" id="privacidade">
+                    <label for="privacidade">Li e aceito a <a href="#">POLITICA DE PRIVACIDADE</a></label> <br>
+                    <input type="checkbox" name="aceiteContato" id="privacidade2"> <label for="privacidade2"> Aceito ser
+                        contatadopela associação Ana Cecília</label>
+                </span>
+
+                <button>Enviar</button>
+            </form>
+            <p>OU</p>
+            <p>Façaum pix</p>
+            <img src="imagens/download.png" alt="">
+        </div>
+
+    </section>
+    <footer>
+
+    </footer>
+
+    <!-- TODO: fazer  botao de enviar abaixo-->
+
+    <script>
+        menu_header = document.querySelector(".menu-mobile");
+        function abrir_menu() {
+            console.log(menu_header.classList);
+            if (menu_header.classList.contains('open')) {
+                menu_header.classList.remove('open');
+                document.getElementById("menu-mobile").style.display = "flex";
+                document.querySelector('.icon').src = "imagens/close_white_36dp.svg";
+            } else {
+                menu_header.classList.add('open');
+                document.getElementById("menu-mobile").style.display = "none";
+                document.querySelector('.icon').src = "imagens/menu_white_36dp.svg";
+            }
+        }
+    </script>
+</body>
+
+</html>

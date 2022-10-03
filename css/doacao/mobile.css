@@ -1,0 +1,44 @@
+@media (max-width: 480px){
+    #imagens{
+        display: none;
+    }
+    #menu-all{
+        display: none;
+    }
+
+    
+    #menu-mobile{
+        width: 150px;
+        display: flex;
+        z-index: 1;
+        margin-top: 350px;
+        padding: 20px;
+        background-color: #060453;
+    }
+    
+    #menu-mobile{
+        display: none;
+    }
+
+    #list-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-mobile .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.2rem;
+    }
+
+    .botao{
+        padding: 10px 30px;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+}
